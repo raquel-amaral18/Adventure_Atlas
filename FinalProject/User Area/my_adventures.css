@@ -1,0 +1,435 @@
+/*---------------------------------------------
+                Introduction
+-----------------------------------------------*/
+
+.intro-text {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 68%;
+    float: left;
+}
+
+.intro-text h2 {
+    color: #126D76;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+/*---------------------------------------------
+                User Information
+-----------------------------------------------*/
+
+.user-info {
+    float: right;
+    width: 23%;
+    margin: 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.profile-picture {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile-picture i {
+    font-size: 100px;
+    color: #999;
+}
+
+.user-details p {
+    text-align: center;
+    margin: 5px auto;
+}
+
+.count-wrapper {
+    align-items: center;
+    margin-top: 10px;
+    color: #126D76;
+}
+
+.count-large {
+    font-size: 24px;
+}
+
+.count-small {
+    font-size: 12px;
+}
+
+.user-details p#description {
+    text-align: justify;
+    font-size: small;
+}
+
+.user-details h2,
+.user-details h3 {
+    color: #126D76;
+}
+
+#update-info-container {
+    text-align: center;
+}
+
+#update-info-btn {
+    background-color: #126D76;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#update-info-form {
+    /* Hide the form initially */
+    display: none;
+    margin-top: 20px;
+}
+
+#update-info-form.show {
+    /* Show the form when the "show" class is applied */
+    display: block;
+}
+
+#update-info-form input[type="file"],
+#update-info-form textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#update-info-form button[type="submit"] {
+    background-color: #126D76;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#update-info-form button[type="submit"]:hover {
+    background-color: #13465b;
+}
+
+/*---------------------------------------------
+                Guides Section
+-----------------------------------------------*/
+
+.guide-container {
+    float: left;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 68%;
+}
+
+.guide {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.guide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.guide .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(18, 109, 118, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.overlay button {
+    flex: 0 0 auto;
+    padding: 10px 24px;
+    background-color: rgb(136, 203, 209);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.guide:hover img {
+    transform: scale(1.1);
+}
+
+.guide:hover .overlay {
+    opacity: 1;
+}
+
+.overlay button:hover {
+    background-color: white;
+    color: #126D76;
+    font-weight: bolder;
+}
+
+.guide .overlay .delete-btn {
+    background-color: transparent;
+    color: rgb(136, 203, 209);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.guide .overlay .delete-btn:hover {
+    color: white;
+}
+
+/*---------------------------------------------
+                Upload Guides Button
+-----------------------------------------------*/
+
+#your-guides {
+    margin-left: 20%;
+    margin-bottom: 20px;
+    width: calc((100% / 3) - 8px);
+    padding: 16px;
+    background-color: white;
+    color: #126D76;
+    border: 1px solid #126D76;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+#your-guides:not([disabled]):hover {
+    box-shadow: 0 1px 9px rgba(18, 109, 118, 0.2);
+}
+
+#your-guides[disabled] {
+    background-color: #eaeaea !important;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*---------------------------------------------
+                Followed Users
+-----------------------------------------------*/
+#followed-users {
+    margin: 70px 10px 20px;
+    max-width: 1000px;
+}
+
+.followed-users-header {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #126D76;
+    font-size: 20px;
+}
+
+.followed-users-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.followed-user {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 250px;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.followed-user:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(rgba(187, 181, 181, 0.3), rgba(242, 223, 223, 0.1));
+}
+
+.followed-user-details {
+    text-align: center;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.followed-user:hover .followed-user-details {
+    transform: translateY(10px);
+    color: white;
+}
+
+.followed-user img {
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.followed-user:hover .followed-user-image {
+    transform: scale(1.1);
+}
+
+.followed-user-info {
+    text-align: center;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.followed-user:hover .followed-user-info {
+    color: white;
+}
+
+.followed-user h3 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #126D76;
+    text-decoration: none;
+}
+
+.followed-user:hover h3 {
+    margin-top: 10px;
+}
+
+.followed-user a {
+    text-decoration: none;
+}
+
+.followed-user button {
+    background-color: #126D76;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.followed-user button:hover {
+    background-color: #1B9AA3;
+}
+
+/*---------------------------------------------
+                Mobile Devices
+-----------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+
+    .intro-text,
+    .user-info,
+    .guide-container,
+    #followed-users {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .user-info {
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .profile-picture {
+        margin: 0 auto 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .user-details {
+        margin-top: 20px;
+    }
+
+    .guide-container {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .guide {
+        margin-bottom: 20px;
+    }
+
+    #your-guides {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .followed-users-container {
+        justify-content: flex-start;
+    }
+
+    .followed-user {
+        width: 100%;
+        margin-right: 0;
+    }
+}

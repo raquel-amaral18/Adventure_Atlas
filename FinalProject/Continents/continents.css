@@ -1,0 +1,257 @@
+/*---------------------------------------------
+                General
+-----------------------------------------------*/
+
+body {
+    font-family: 'aeroport-regular', Arial, sans-serif !important;
+}
+
+main {
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    color: #126D76;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 13px;
+}
+
+/*---------------------------------------------
+                Continent Introduction
+                --> Summary
+                --> 4 Images
+-----------------------------------------------*/
+
+#summary {
+    padding: 20px 10px;
+    background-color: white;
+}
+
+#summary p {
+    margin: 0 150px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+}
+
+.photo-show {
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-show {
+    width: 300px;
+    height: auto;
+}
+
+/*---------------------------------------------
+                Bucket List Adventures
+                --> Slideshow
+                --> List
+-----------------------------------------------*/
+
+#bucketlist {
+    padding: 20px 0;
+    background-color: #EFEAE4;
+}
+
+#slideshow {
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+#slideshow img {
+    max-width: 80%;
+    margin-left: 5%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#list {
+    float: right;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#list h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#list ul {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#list li {
+    font-size: 18px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/*---------------------------------------------
+                Guides
+-----------------------------------------------*/
+
+.guide-container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.guide {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.guide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.guide .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(18, 109, 118, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay button {
+    flex: 0 0 auto;
+    padding: 10px 24px;
+    background-color: rgb(136, 203, 209);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.guide:hover img {
+    transform: scale(1.1);
+}
+
+.guide:hover .overlay {
+    opacity: 1;
+}
+
+.overlay button:hover {
+    background-color: white;
+    color: #126D76;
+    font-weight: bolder;
+}
+
+/*---------------------------------------------
+                Clearfix
+-----------------------------------------------*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*---------------------------------------------
+                Mobile Devices
+-----------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+    main {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #summary {
+        padding: 10px 10px 20px;
+    }
+
+    #summary p {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .photo-show {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+    
+    .image-show {
+        width: 20%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #bucketlist {
+        padding: 20px 10px;
+    }
+
+    #slideshow {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #slideshow img {
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    #list {
+        float: none;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #list h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #list ul {
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    #list li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}

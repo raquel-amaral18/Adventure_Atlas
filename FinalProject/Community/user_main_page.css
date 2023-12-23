@@ -1,0 +1,176 @@
+/*---------------------------------------------
+                User Information
+-----------------------------------------------*/
+
+.user-info {
+    float: right;
+    width: 25%;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.profile-picture {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile-picture i {
+    font-size: 100px;
+    color: #999;
+}
+
+.user-details p {
+    text-align: center;
+    margin: 5px auto;
+}
+
+.user-details p#description {
+    text-align: justify;
+    font-size: small;
+}
+
+.follow-button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #126D76;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.follow-button:hover {
+    background-color: #13465b;
+}
+
+.followers-count {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/*---------------------------------------------
+                Guides Section
+-----------------------------------------------*/
+
+.guide-container {
+    float: left;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 68%;
+}
+
+.guide {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.guide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.guide .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(18, 109, 118, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.overlay button {
+    flex: 0 0 auto;
+    padding: 10px 24px;
+    background-color: rgb(136, 203, 209);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.guide:hover img {
+    transform: scale(1.1);
+}
+
+.guide:hover .overlay {
+    opacity: 1;
+}
+
+.overlay button:hover {
+    background-color: white;
+    color: #126D76;
+    font-weight: bolder;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*---------------------------------------------
+                Mobile Devices
+-----------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    .user-info {
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .user-info .profile-picture {
+        margin: 0 auto 20px;
+    }
+
+    .guide-container {
+        justify-content: center;
+        width: 100%;
+    }
+}

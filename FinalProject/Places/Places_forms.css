@@ -1,0 +1,119 @@
+/*---------------------------------------------
+                General
+-----------------------------------------------*/
+
+body {
+    background-color: #EFEAE4;
+    color: #126D76;
+    font-family: 'made-dillan-personal', Arial, sans-serif !important;
+}
+
+main {
+    margin: 20px 0;
+}
+
+/*---------------------------------------------
+                Form Section
+-----------------------------------------------*/
+
+main form {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+main input[type="text"],
+main select,
+main textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #126D76;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #126D76;
+    font-size: 14px;
+}
+
+main input[type="submit"] {
+    background-color: #126D76;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+main input[type="submit"]:hover {
+    background-color: #88CBD1;
+}
+
+main fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+main legend {
+    color: #126D76;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+main p {
+    font-size: 13px;
+    color: grey;
+    text-align: justify;
+}
+
+main.section {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #F3F7F9;
+    border: 1px solid #126D76;
+    border-radius: 4px;
+}
+
+main.section label {
+    display: block;
+    margin-bottom: 6px;
+    color: #126D76;
+    font-weight: bold;
+}
+
+main.section input[type="text"],
+main.section textarea {
+    margin-bottom: 12px;
+    background-color: white;
+    color: #126D76;
+    font-size: 14px;
+}
+
+main input[type="submit"] {
+    margin-left: 33%;
+    width: calc((100% / 3) - 8px);
+    padding: 16px;
+    background-color: white;
+    color: #126D76;
+    border: 1px solid #126D76;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+main input[type="submit"]:not([disabled]):hover {
+    box-shadow: 0 1px 9px rgba(18, 109, 118, 0.2);
+    background-color: white;
+}

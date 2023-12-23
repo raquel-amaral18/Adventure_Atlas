@@ -1,0 +1,170 @@
+/*---------------------------------------------
+                General
+-----------------------------------------------*/
+
+body {
+    max-width: 100%;
+    font-family: 'aeroport-regular', Arial, sans-serif !important;
+}
+
+header {
+    background-color: #EFEAE4;
+    margin-bottom: 0px;
+}
+
+/*---------------------------------------------
+                Ribbon (above logo)
+-----------------------------------------------*/
+
+.ribbon {
+    padding: 20px 0;
+    background-color: #126D76;
+    width: 100%;
+
+}
+
+.ribbon a {
+    margin-left: 2%;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .75px;
+    color: #EFEAE4;
+}
+
+.ribbon a:hover {
+    text-decoration: underline 1px solid #88CBD1;
+    color: #88CBD1;
+}
+
+/*---------------------------------------------
+                Logo
+-----------------------------------------------*/
+
+header img {
+    margin-left: 33%;
+    margin-top: 20px;
+    width: 450px;
+}
+
+/*---------------------------------------------
+                Navbar
+-----------------------------------------------*/
+
+.navbar {
+    margin-left: 25%;
+    display: inline-block;
+}
+
+.navbar a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #126D76;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .75px;
+}
+
+.navbar a:hover {
+    text-decoration: underline 1px solid #88CBD1;
+    color: #88CBD1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    background-color: #EFEAE4;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #126D76;
+    padding: 12px 16px;
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.logout-button {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #126D76;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .75px;
+    border-radius: 25px;
+    background-color: #EFEAE4;
+    border: 2px solid #126D76;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar a.logout-button:hover {
+    text-decoration: none;
+    background-color: #126D76;
+    color: #EFEAE4;
+}
+
+/*---------------------------------------------
+                Mobile Devices
+-----------------------------------------------*/
+
+@media (max-width: 768px) {
+    header img {
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .navbar {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 8px 0 0;
+    }
+
+    .dropdown {
+        display: block;
+        margin: 8px 0 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown:hover .show {
+        display: block;
+    }
+}

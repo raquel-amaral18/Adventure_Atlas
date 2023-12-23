@@ -1,0 +1,105 @@
+/*---------------------------------------------
+                General
+-----------------------------------------------*/
+
+body {
+    font-family: 'aeroport-regular', Arial, sans-serif !important;
+}
+
+footer {
+    background-color: #EFEAE4;
+    color: #126D76;
+    padding: 20px;
+}
+
+.container {
+    margin: 0 10%;
+}
+
+.container h3 {
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 40%;
+    margin-left: 5%;
+}
+
+/*---------------------------------------------
+                Contacts
+-----------------------------------------------*/
+
+.fa {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/*---------------------------------------------
+                Social Media
+-----------------------------------------------*/
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #126D76;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+/*---------------------------------------------
+                Admin Login
+-----------------------------------------------*/
+
+/* Form input fields */
+.col input[type="text"],
+.col input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Form submit button */
+.col button[type="submit"] {
+    background-color: #126D76;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Form submit button hover effect */
+.col button[type="submit"]:hover {
+    border: 1px solid #126D76;
+    box-shadow: 0 1px 9px rgba(18, 109, 118, 0.6);
+}
+
+/*---------------------------------------------
+                Mobile Devices
+-----------------------------------------------*/
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}

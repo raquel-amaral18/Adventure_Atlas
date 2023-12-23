@@ -1,0 +1,114 @@
+.main {
+    margin-top: 0px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-1 {
+    background-image: url('https://images.pexels.com/photos/4603410/pexels-photo-4603410.jpeg?cs=srgb&dl=pexels-jess-loiterton-4603410.jpg&fm=jpg');
+    min-height: 500px;
+}
+
+.parallax-text {
+    position: absolute;
+    top: 70%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 5px;
+    background-color: #126D76;
+    opacity: 0.8;
+}
+
+.parallax-text h2,
+.parallax-text p {
+    font-family: 'made-dillan-personal', Arial, sans-serif !important;
+    color: #EFEAE4;
+    letter-spacing: 0.5px;
+}
+
+.faq {
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+}
+
+.faq h2 {
+    font-family: 'made-dillan-personal', Arial, sans-serif !important;
+    color: #126D76;
+    text-align: center;
+    padding: 10px;
+}
+
+.faq-item {
+    margin: 0 20% 20px 10%;
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFEAE4;
+    color: #126D76;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    background-color: #fff;
+    color: #126D76;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq-question .icon {
+    font-size: 20px;
+}
+
+.faq-question .icon i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-question.open .icon i {
+    transform: rotate(180deg);
+}
+
+.parallax-2 {
+    background-image: url('https://deih43ym53wif.cloudfront.net/shutterstock_1043756818_99f8e548d3.jpeg');
+    min-height: 500px;
+}
+
+/* Media query for 767px screens */
+@media screen and (max-width: 767px) {
+    .parallax-text {
+        display: none;
+    }
+
+    .faq-item {
+        margin: 0 10% 20px;
+    }
+}
+
+/* Media query for 480px screens */
+@media screen and (max-width: 480px) {
+    .parallax-text {
+        display: none;
+    }
+
+    .faq-item {
+        margin: 0 5% 20px;
+    }
+}

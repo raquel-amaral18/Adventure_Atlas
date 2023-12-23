@@ -1,0 +1,38 @@
+/*---------------------------------------------
+                Guide's Details
+-----------------------------------------------*/
+
+.guide-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 300px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.section-content {
+    margin-bottom: 20px;
+}
+
+/*---------------------------------------------
+                Return to List Link
+-----------------------------------------------*/
+
+a {
+    display: block;
+    margin-top: 20px;
+    color: black;
+}
